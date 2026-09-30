@@ -32,4 +32,4 @@ A Barbearia Garage Hair foi selecionada por apresentar processos de negócio bem
 
 ## 📄 5. Documentação Principal
 - [Documentação Técnica](<./docs/Documentação Técnica.pdf>)
-- [Modelo Conceitual Fonte](./database/brmodelo/modelo-conceitual.brM3)
+- [Modelo Conceitual Fonte](./assets/der/modelo-conceitual.png)
