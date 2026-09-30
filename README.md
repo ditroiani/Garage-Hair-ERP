@@ -26,10 +26,10 @@ O ERP Barbearia Garage Hair é um sistema de gestão integrado desenvolvido para
 A Barbearia Garage Hair foi selecionada por apresentar processos de negócio bem definidos no mundo real, porém com forte dependência de controles manuais (como planilhas em Excel e registros físicos para estoque e finanças). O cenário é ideal para a implementação de um sistema ERP integrado, permitindo resolver problemas reais de gestão e perda de dados.
 
 ## 📂 4. Estrutura do Repositório
-- 📄 **[docs/](.docs/)**: Documentação técnica completa em PDF (Requisitos RF/RNF, Regras de Negócio, Dicionário de Dados, Atributos e Justificativas).
-- 💾 **[database/](.database/)**: Arquivos de modelagem e banco de dados.
-- 🖼️ **[assets/](.assets/)**: Mídias e diagramas gráficos do projeto.
+- 📄 **[docs/](./docs/)**: Documentação técnica completa em PDF (Requisitos RF/RNF, Regras de Negócio, Dicionário de Dados, Atributos e Justificativas).
+- 💾 **[database/](./database/)**: Arquivos de modelagem e banco de dados.
+- 🖼️ **[assets/](./assets/)**: Mídias e diagramas gráficos do projeto.
 
 ## 📄 5. Documentação Principal
-- [Documentação Técnica](<.docs/Documentação Técnica.pdf>)
-- [Modelo Conceitual Fonte](.database/brmodelo/modelo-conceitual.brM3)
+- [Documentação Técnica](<./docs/Documentação Técnica.pdf>)
+- [Modelo Conceitual Fonte](./database/brmodelo/modelo-conceitual.brM3)
