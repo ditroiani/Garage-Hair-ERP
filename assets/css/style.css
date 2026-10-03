@@ -1,0 +1,459 @@
+/* =========================================================
+   1. VARIÁVEIS
+   ========================================================= */
+
+:root {
+    --garage-dark: #171a17;
+    --garage-green: #26382c;
+    --garage-olive: #667a5b;
+    --garage-beige: #d6c7a8;
+    --garage-light: #f4f1e8;
+    --garage-text: #252525;
+    --garage-white: #ffffff;
+    --transition: 0.3s ease;
+}
+
+
+/* =========================================================
+   2. CONFIGURAÇÕES GERAIS
+   ========================================================= */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--garage-light);
+    color: var(--garage-text);
+    font-family: "Montserrat", Arial, sans-serif;
+    line-height: 1.6;
+}
+
+
+/* Links */
+
+a {
+    text-decoration: none;
+}
+
+
+/* Imagens */
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* Títulos */
+
+h1,
+h2,
+h3 {
+    font-family: "Oswald", Arial, sans-serif;
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+
+/* =========================================================
+   3. TIPOGRAFIA
+   ========================================================= */
+
+h1 {
+    font-size: clamp(2.8rem, 6vw, 5rem);
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: clamp(2rem, 4vw, 3.2rem);
+    text-transform: uppercase;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+p {
+    font-size: 1rem;
+}
+
+
+/* =========================================================
+   4. CABEÇALHO / NAVBAR
+   ========================================================= */
+
+header {
+    position: relative;
+    z-index: 1000;
+}
+
+
+/* Barra de navegação */
+
+.navbar {
+    min-height: 80px;
+    background-color: var(--garage-dark);
+    padding: 1rem 0;
+}
+
+
+/* Logo */
+
+.navbar-brand {
+    color: var(--garage-white);
+    font-family: "Oswald", Arial, sans-serif;
+    font-size: 1.8rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    transition: var(--transition);
+}
+
+.navbar-brand:hover {
+    color: var(--garage-beige);
+}
+
+
+/* Links */
+
+.navbar .nav-link {
+    color: var(--garage-white);
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-left: 0.4rem;
+    transition: var(--transition);
+}
+
+
+/* Hover */
+
+.navbar .nav-link:hover {
+    color: var(--garage-beige);
+}
+
+
+/* Página atual */
+
+.navbar .nav-link.active {
+    color: var(--garage-beige);
+}
+
+
+/* Botão mobile */
+
+.navbar-toggler {
+    border: 1px solid var(--garage-beige);
+}
+
+.navbar-toggler:focus {
+    box-shadow: 0 0 0 0.2rem rgba(214, 199, 168, 0.25);
+}
+
+.navbar-toggler i {
+    color: var(--garage-beige);
+    font-size: 1.5rem;
+}
+
+
+/* =========================================================
+   5. BOTÕES
+   ========================================================= */
+
+.btn {
+    border-radius: 2px;
+    padding: 0.8rem 1.5rem;
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    transition: var(--transition);
+}
+
+
+/* Botão principal */
+
+.btn-primary {
+    background-color: var(--garage-beige);
+    border-color: var(--garage-beige);
+    color: var(--garage-dark);
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+    background-color: var(--garage-white);
+    border-color: var(--garage-white);
+    color: var(--garage-dark);
+}
+
+
+/* Botão secundário */
+
+.btn-outline-light {
+    border-color: var(--garage-white);
+    color: var(--garage-white);
+}
+
+.btn-outline-light:hover,
+.btn-outline-light:focus {
+    background-color: var(--garage-white);
+    color: var(--garage-dark);
+}
+
+
+/* =========================================================
+   6. SEÇÕES
+   ========================================================= */
+
+.section {
+    padding: 6rem 0;
+}
+
+
+/* Título das seções */
+
+.section-title {
+    max-width: 800px;
+    margin: 0 auto 4rem;
+}
+
+
+/* Pequeno título */
+
+.section-title>p:first-child,
+.section-subtitle {
+    color: var(--garage-olive);
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+
+/* Texto do título */
+
+.section-title>p:last-child {
+    color: #666;
+    max-width: 650px;
+    margin: 1rem auto 0;
+}
+
+
+/* =========================================================
+   7. CARDS
+   ========================================================= */
+
+.card {
+    background-color: var(--garage-white);
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
+    transition: transform var(--transition), box-shadow var(--transition);
+}
+
+
+/* Efeito hover */
+
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.10);
+}
+
+
+/* Conteúdo */
+
+.card-body {
+    padding: 2rem;
+}
+
+
+/* Ícones */
+
+.card i {
+    display: block;
+    color: var(--garage-olive);
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+
+/* Títulos dos cards */
+
+.card h3 {
+    color: var(--garage-dark);
+    margin-bottom: 1rem;
+}
+
+
+/* Textos */
+
+.card p {
+    color: #666;
+    margin-bottom: 0;
+}
+
+
+/* =========================================================
+   8. CTA FINAL
+   ========================================================= */
+
+.cta {
+    background-color: var(--garage-beige);
+    color: var(--garage-dark);
+    padding: 5rem 0;
+}
+
+.cta h2 {
+    margin-bottom: 1rem;
+}
+
+.cta p {
+    max-width: 650px;
+    margin: 0 auto 2rem;
+    color: #444;
+}
+
+
+/* =========================================================
+   9. RODAPÉ
+   ========================================================= */
+
+footer {
+    background-color: var(--garage-dark);
+    color: var(--garage-white);
+    padding: 4rem 0 2rem;
+}
+
+
+/* Marca */
+
+footer h2 {
+    color: var(--garage-white);
+    font-size: 1.8rem;
+    letter-spacing: 2px;
+}
+
+footer h3 {
+    color: var(--garage-beige);
+    font-size: 1.2rem;
+    margin-bottom: 1.2rem;
+}
+
+footer p {
+    color: #cfcfcf;
+    font-size: 0.9rem;
+}
+
+
+/* Menu */
+
+.footer-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-menu li {
+    margin-bottom: 0.5rem;
+}
+
+.footer-menu a {
+    color: #cfcfcf;
+    font-size: 0.9rem;
+    transition: var(--transition);
+}
+
+.footer-menu a:hover {
+    color: var(--garage-beige);
+}
+
+
+/* Linha */
+
+footer hr {
+    border: 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+    margin: 3rem 0 1.5rem;
+}
+
+
+/* Rodapé inferior */
+
+.footer-bottom p {
+    margin: 0;
+    font-size: 0.8rem;
+    color: #999;
+}
+
+
+/* =========================================================
+   10. FOCO DE ACESSIBILIDADE
+   ========================================================= */
+
+
+/*
+   Mantemos um indicador visual claro para quem navega
+   utilizando teclado.
+*/
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+    outline: 3px solid var(--garage-beige);
+    outline-offset: 3px;
+}
+
+
+/* =========================================================
+   11. RESPONSIVIDADE
+   ========================================================= */
+
+
+/* Tablets */
+
+@media (max-width: 991px) {
+    .navbar-collapse {
+        padding-top: 1rem;
+    }
+    .navbar .nav-link {
+        margin-left: 0;
+        padding: 0.7rem 0;
+    }
+}
+
+
+/* Celulares */
+
+@media (max-width: 767px) {
+    .section {
+        padding: 4rem 0;
+    }
+    .section-title {
+        margin-bottom: 3rem;
+    }
+    footer {
+        text-align: center;
+    }
+    footer .col-lg-4 {
+        margin-bottom: 2rem;
+    }
+}
+
+
+/* Celulares pequenos */
+
+@media (max-width: 480px) {
+    h2 {
+        font-size: 2rem;
+    }
+    .section {
+        padding: 3.5rem 0;
+    }
+    .card-body {
+        padding: 1.5rem;
+    }
+}
