@@ -1,5 +1,0 @@
-• README.md: objetivos, tema, divisão de funções.
-• Diário de bordo: decisões, aprendizados, dificuldades.
-• Orçamento de hospedagem/domínio: 3 hospedagens, 3 domínios, tabela comparativa,
-justificativa.
-• Evidências de testes: prints ou descrições de validação, navegação e acessibilidade.
