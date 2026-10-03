@@ -49,7 +49,7 @@ Dessa forma, o projeto proporciona uma aplicação prática dos conceitos estuda
 | Vivian Cristina |
 | Larissa Fujiwara |
 | Gustavo Miguel |
-| Henrique Alves |
+| Luan de Oliveira |
 | Victor Oliveira |
 
 
